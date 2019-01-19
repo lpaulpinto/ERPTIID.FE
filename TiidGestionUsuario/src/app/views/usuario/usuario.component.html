@@ -1,0 +1,40 @@
+<a routerLink="/busqueda" routerLinkActive="active">Busqueda</a>
+
+<div class="ibox-content">
+  <form class="m-t" role="form" action="#" (ngSubmit)="registrarUsuario()">
+    <div class="row">
+      <div class="col-md-2" style="padding: 0px;">
+        <div class="form-group">
+          <div class="form-row">
+              <div class="col-md-6">
+                <label for="codigo">Codigo</label>
+                <input type="text" class="form-control" placeholder="Codigo" name="codigo" [(ngModel)]="registroProyecto.codigo">
+              </div>
+          </div>         
+        </div>
+      </div>
+      <div class="col-md-2">
+        <label for="nombre">Clave</label>
+        <input type="text" class="form-control" placeholder="Clave"  name="clave" [(ngModel)]="registroProyecto.clave">
+      </div>                
+      <div class="col-md-2">
+        <label for="nombre">Nombre</label>
+        <input type="text" class="form-control" placeholder="Nombre"  name="nombre" [(ngModel)]="registroProyecto.nombre">
+      </div>            
+      <div class="col-md-2">
+        <label for="nombre">Apellidos</label>
+        <input type="text" class="form-control" placeholder="Apellidos"  name="apellidos" [(ngModel)]="registroProyecto.apellidos">
+      </div>
+    </div>            
+    <div class="hr-line-dashed"></div>
+    <div class="row">
+      <div class="form-group">
+        <div class="col-sm-12 text-right">
+          <button class="btn btn-primary btn-sm" type="submit">Registrar</button>
+          &nbsp;
+          <button class="btn btn-default-model1 btn-sm" type="button">Cancelar</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
